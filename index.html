@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>7-1 句子聽打挑戰</title>
+<title>9-1 句子聽打挑戰</title>
 <style>
 body { font-family: sans-serif; max-width: 600px; margin: auto; text-align: center; padding: 30px 15px; }
 #logo, #logo-game { width: 150px; max-width: 80%; margin-bottom: 10px; display: block; margin-left: auto; margin-right: auto; }
@@ -56,18 +56,18 @@ if (password !== "1231") { alert("密碼錯誤，無法進入！"); window.locat
 
 <script>
 const questions = [
-{ audio: "11070101S.mp3", answer: "이 모자는 얼마예요?", chinese: "這頂帽子多少錢？" },
-{ audio: "11070102S.mp3", answer: "그 치마는 삼만 팔천 원이에요.", chinese: "那條裙子是三萬八千韓元。" },
-{ audio: "11070103S.mp3", answer: "비빔밥은 구천칠백 원이에요.", chinese: "拌飯是九千七百韓元。" },
-{ audio: "11070104S.mp3", answer: "신발은 십만 팔천 원이에요.", chinese: "鞋子是十萬八千韓元。" },
-{ audio: "11070105S.mp3", answer: "원피스는 육만 삼천 원이에요.", chinese: "連身裙是六萬三千韓元。" },
-{ audio: "11070106S.mp3", answer: "옷은 사만 오천 원이에요.", chinese: "衣服是四萬五千韓元。" },
-{ audio: "11070107S.mp3", answer: "커피는 이천백 원이에요.", chinese: "咖啡是二千一百韓元。" },
-{ audio: "11070108S.mp3", answer: "물은 천삼백 원이에요.", chinese: "水是一千三百韓元。" },
-{ audio: "11070109S.mp3", answer: "바지는 만 오천 원이에요.", chinese: "褲子是一萬五千韓元。" },
-{ audio: "11070110S.mp3", answer: "코트는 십칠만 육천 원이에요.", chinese: "外套是十七萬六千韓元。" },
-{ audio: "11070111S.mp3", answer: "양말은 천이백 원이에요.", chinese: "襪子是一千二百韓元。" },
-{ audio: "11070112S.mp3", answer: "반지는 칠천백 원이에요.", chinese: "戒指是七千一百韓元。" }
+{ "audio": "11090101S.mp3", "answer": "고양이입니다.", "chinese": "是貓咪。" },
+{ "audio": "11090102S.mp3", "answer": "김밥입니다.", "chinese": "是紫菜飯卷。" },
+{ "audio": "11090103S.mp3", "answer": "선생님입니다.", "chinese": "是老闆。" },
+{ "audio": "11090104S.mp3", "answer": "맛없습니다.", "chinese": "不好吃。" },
+{ "audio": "11090105S.mp3", "answer": "많습니다.", "chinese": "多。" },
+{ "audio": "11090106S.mp3", "answer": "만듭니다.", "chinese": "製作。" },
+{ "audio": "11090107S.mp3", "answer": "숙제합니다.", "chinese": "寫作業。" },
+{ "audio": "11090108S.mp3", "answer": "먹습니까?", "chinese": "吃嗎？" },
+{ "audio": "11090109S.mp3", "answer": "바쁩니다.", "chinese": "很忙。" },
+{ "audio": "11090110S.mp3", "answer": "너무 비쌉니다.", "chinese": "很貴。" },
+{ "audio": "11090111S.mp3", "answer": "기다립니다.", "chinese": "等待。" },
+{ "audio": "11090112S.mp3", "answer": "여행합니다.", "chinese": "旅行。" }
 ];
 
 const modeSelectDiv = document.getElementById("mode-select");
@@ -102,8 +102,8 @@ let currentMode = null;
 let startTime = null; // 記錄挑戰開始時間
 
 // 顯示標題與送表單標題
-const displayTitle = "7-1 句子聽打挑戰";
-const fullTitle = "11-7-1 句子聽打挑戰";
+const displayTitle = "9-1 句子聽打挑戰";
+const fullTitle = "11-9-1 句子聽打挑戰";
 
 function shuffle(array){for(let i=array.length-1;i>0;i--){const j=Math.floor(Math.random()*(i+1));[array[i],array[j]]=[array[j],array[i]];}return array;}
 
